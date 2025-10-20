@@ -1,4 +1,4 @@
-
+#Kalman_Filter & Pairs_Trading
 
 from pykalman import KalmanFilter
 import numpy as np
@@ -71,3 +71,4 @@ data['returns'] = ((data['AAPL'] - data['AAPL'].shift(1)) / data['AAPL'].shift(1
             (data['FB'] - data['FB'].shift(1)) / data['FB'].shift(1)) * data['position_2'].shift(1)
 data['returns'].sum()
 plt.show()
+
